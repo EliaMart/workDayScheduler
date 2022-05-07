@@ -1,6 +1,6 @@
 var dayDisplay = $('#currentDay');
-var timeEl = $('#time');
 var saveBtnEl = $('#saveBtn');
+var hourEl = $(".hour");
 
 $(document).ready(function(){
 $('.saveBtn').on('click', function() {
@@ -26,6 +26,29 @@ $('#hour-2 .description').val(localStorage.getItem("hour-2"));
 $('#hour-3 .description').val(localStorage.getItem("hour-3"));
 $('#hour-4 .description').val(localStorage.getItem("hour-4"));
 $('#hour-5 .description').val(localStorage.getItem("hour-5"));
+
+
+var colorTime = function () {
+
+    var currenthour = parseInt(moment().format('LT'));
+    console.log(currenthour);
+
+    var hour = $(".hour").text().trim();
+    console.log(hour);
+
+    var time = moment(hour,"LT");
+    console.log(time)
+;
+    // var hour = $(".hour").text(moment().format('H'));
+    // console.log(hour);
+
+    // if (currenthour === hour) {
+    //     $('.description').addClass('.present');
+    // }
+};
+
+
+colorTime();
 
 
 
