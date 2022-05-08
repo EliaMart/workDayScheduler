@@ -9,4 +9,4 @@ You are able to enter an event in the text area and save the information into lo
 
 ![Here is a photo of the scheduler](/WorkDayScheduler.html.png)
 
-Here is the URL to the github page: 
+Here is the URL to the github page: https://eliamart.github.io/workDayScheduler/
